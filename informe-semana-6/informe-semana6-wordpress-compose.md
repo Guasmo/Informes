@@ -71,13 +71,13 @@ Para realizar esta práctica el estudiante necesita tener claro los siguientes t
 
 ## 7. Material de apoyo
 
-- Documentación oficial de Docker Compose: https://docs.docker.com/compose/
-- Referencia de la especificación Compose: https://docs.docker.com/reference/compose-file/
-- Imagen oficial de WordPress en Docker Hub: https://hub.docker.com/_/wordpress
-- Imagen oficial de MySQL en Docker Hub: https://hub.docker.com/_/mysql
-- Imagen oficial de phpMyAdmin en Docker Hub: https://hub.docker.com/_/phpmyadmin
-- Documentación de redes en Docker: https://docs.docker.com/engine/network/
-- Documentación de volúmenes en Docker: https://docs.docker.com/engine/storage/volumes/
+- Documentación oficial de Docker Compose: <https://docs.docker.com/compose/>
+- Referencia de la especificación Compose: <https://docs.docker.com/reference/compose-file/>
+- Imagen oficial de WordPress en Docker Hub: <https://hub.docker.com/_/wordpress>
+- Imagen oficial de MySQL en Docker Hub: <https://hub.docker.com/_/mysql>
+- Imagen oficial de phpMyAdmin en Docker Hub: <https://hub.docker.com/_/phpmyadmin>
+- Documentación de redes en Docker: <https://docs.docker.com/engine/network/>
+- Documentación de volúmenes en Docker: <https://docs.docker.com/engine/storage/volumes/>
 - Guía de la asignatura semana 6
 
 ---
@@ -191,6 +191,7 @@ docker compose up -d
 ```
 
 Docker Compose procesó el archivo y realizó las siguientes acciones automáticamente:
+
 - Creó la red `semana6-wordpress-docker_wp_network`
 - Creó los volúmenes `semana6-wordpress-docker_mysql_data` y `semana6-wordpress-docker_wordpress_data`
 - Descargó las imágenes necesarias desde Docker Hub
@@ -287,7 +288,7 @@ http://localhost:8080
 
 WordPress presentó su instalador inicial donde se seleccionó el idioma y se completó la configuración básica del sitio.
 
-> **📌 Imagen a insertar:** Captura de pantalla del instalador de WordPress en `http://localhost:8080`
+![Captura de pantallad de instalador de wordpress](./imagen6.png)
 
 *Figura 6-6. Pantalla del instalador de WordPress accedida en `http://localhost:8080` confirmando que el contenedor `wordpress_app` está operativo y conectado a MySQL.*
 
@@ -303,7 +304,7 @@ http://localhost:8081
 
 phpMyAdmin mostró su panel de administración conectado al contenedor `mysql_db`, donde se puede verificar la base de datos `wpdb` creada automáticamente por las variables de entorno.
 
-> **📌 Imagen a insertar:** Captura de pantalla del panel de phpMyAdmin en `http://localhost:8081`
+![Panel de PhpMyAdmin](./imagen7.png)
 
 *Figura 6-7. Panel de phpMyAdmin en `http://localhost:8081` mostrando la conexión exitosa al contenedor MySQL y la base de datos `wpdb` creada por las variables de entorno.*
 
@@ -351,13 +352,13 @@ Como resultado general, se logró desplegar un stack web completo y reproducible
 
 ## 10. Bibliografía
 
-- Docker Inc. (2025). *Docker Compose overview*. Docker Documentation. https://docs.docker.com/compose/
-- Docker Inc. (2025). *Compose file reference*. Docker Documentation. https://docs.docker.com/reference/compose-file/
-- Docker Inc. (2025). *Networking in Compose*. Docker Documentation. https://docs.docker.com/compose/how-tos/networking/
-- Docker Inc. (2025). *Use volumes*. Docker Documentation. https://docs.docker.com/engine/storage/volumes/
-- Docker Inc. (2025). *Volumes top-level element*. Docker Documentation. https://docs.docker.com/reference/compose-file/volumes/
-- Docker Inc. (2025). *WordPress - Official Image*. Docker Hub. https://hub.docker.com/_/wordpress
-- Docker Inc. (2025). *MySQL - Official Image*. Docker Hub. https://hub.docker.com/_/mysql
-- Docker Inc. (2025). *phpMyAdmin - Official Image*. Docker Hub. https://hub.docker.com/_/phpmyadmin
-- Docker Inc. (2025). *depends_on - Compose Deploy Specification*. Docker Documentation. https://docs.docker.com/reference/compose-file/services/#depends_on
-- MySQL AB. (2025). *MySQL 8.0 Reference Manual*. Oracle Corporation. https://dev.mysql.com/doc/refman/8.0/en/
+- Docker Inc. (2025). *Docker Compose overview*. Docker Documentation. <https://docs.docker.com/compose/>
+- Docker Inc. (2025). *Compose file reference*. Docker Documentation. <https://docs.docker.com/reference/compose-file/>
+- Docker Inc. (2025). *Networking in Compose*. Docker Documentation. <https://docs.docker.com/compose/how-tos/networking/>
+- Docker Inc. (2025). *Use volumes*. Docker Documentation. <https://docs.docker.com/engine/storage/volumes/>
+- Docker Inc. (2025). *Volumes top-level element*. Docker Documentation. <https://docs.docker.com/reference/compose-file/volumes/>
+- Docker Inc. (2025). *WordPress - Official Image*. Docker Hub. <https://hub.docker.com/_/wordpress>
+- Docker Inc. (2025). *MySQL - Official Image*. Docker Hub. <https://hub.docker.com/_/mysql>
+- Docker Inc. (2025). *phpMyAdmin - Official Image*. Docker Hub. <https://hub.docker.com/_/phpmyadmin>
+- Docker Inc. (2025). *depends_on - Compose Deploy Specification*. Docker Documentation. <https://docs.docker.com/reference/compose-file/services/#depends_on>
+- MySQL AB. (2025). *MySQL 8.0 Reference Manual*. Oracle Corporation. <https://dev.mysql.com/doc/refman/8.0/en/>
